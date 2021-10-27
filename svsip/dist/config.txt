@@ -1,0 +1,52 @@
+# This is a comment in the config file.
+# Information on http://svsip.free.fr
+
+# Set domain sip provider (example: freephonie.net)
+--domain XXXX
+
+# Set authentication username
+--username XXXXX
+
+# Set authentication password
+--password XXXXX
+
+# Optional registration interval (default 55) (for freephonie set 1800)
+--reg-timeout 1800
+
+# Optional microphone volume (default 1.0)
+--mic-level 3.0
+
+# Optional speaker volume (default 1.0)
+#--speaker-level 1.0
+
+
+# Optional for expert: set realm
+#--realm
+
+# Optional:  log to filename
+#--log-file directory/filename
+# optional: set log max level to N (0(none) to 6(trace))
+#--log-level
+
+# Optional: Set TCP/UDP port. This implicitly enables both TCP and UDP transports 
+# on the specified port, unless if TCP or UDP is disabled. Default is 5060.
+#--local-port 5060
+
+#  Optional: Enable ICE (default:no)
+#--use-ice
+
+#  Optional: Set the start RTP port. Default is 4000.
+#--rtp-port 4000
+
+#  Optional: Add the specified nameserver to enable SRV resolution
+# This option can be specified multiple times.
+#--nameserver XXXXXXXX
+
+#  Optional: Specify the STUN server to use, for SIP UP transport, UDP media transport, 
+# and ICE media transport. The HOSTDOM value may identify a  hostname or a 
+# domain name. When DNS SRV resolution is enabled (with --nameserver option 
+# above), pjsua will first try to resolve the STUN server by querying DNS SRV 
+# record for the domain specified in HOSTDOM. If the DNS SRV resolution fails, 
+# or if nameserver is not configured, HOSTDOM is treated as a hostname.                  
+#--stun-domain HOSTDOM
+#--stun-srv HOSTDOM
